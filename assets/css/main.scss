@@ -16,3 +16,13 @@ sitemap: false
     font-weight: 400;
     font-size: 16px;
 }
+
+.btn--pinterest {
+    background-color: #bd081c;
+    color: #fff;
+
+    &:hover {
+        background-color: #aa0013;
+        color: #fff;
+    }
+}

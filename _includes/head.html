@@ -27,6 +27,11 @@
   {% if site.google_fonts %}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family={%- for font in site.google_fonts -%}{{ font.name | replace: ' ', '+' }}{% if font.weights %}:{% endif %}{{ font.weights | remove: ' ' }}{% if forloop.last != true %}|{% endif %}{%- endfor -%}">
   {% endif %}
+  {% if page.custom_css %}
+    {% for stylesheet in page.custom_css %}
+      <link rel="stylesheet" href="{{ stylesheet  | relative_url }}" type="text/css">
+    {% endfor %}
+  {% endif %}
 
   {%- if site.plugins contains 'jekyll-feed' or site.gems contains 'jekyll-feed' -%}
     {%- comment -%}
@@ -45,6 +50,12 @@
       <script src="{{ script_path }}"></script>
     {%- endfor -%}
   {%- endif -%}
+
+  {% if page.custom_js %}
+    {% for js_file in page.custom_js %}
+      <script src="{{ js_file | relative_url }}" type="text/javascript"></script>
+    {% endfor %}
+  {% endif %}
 
   {% include head-custom.html %}
 </head>
