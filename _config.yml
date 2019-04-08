@@ -87,8 +87,8 @@ defaults:
 
 # Site Author
 author:
-  name:
-  picture:
+  name: "Filip Milovanović"
+  picture: "/assets/images/b.q-Logo-full-512.png"
   email:
   twitter:
   links:
