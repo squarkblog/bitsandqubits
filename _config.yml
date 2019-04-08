@@ -18,7 +18,7 @@ theme: jekyll-theme-so-simple
 locale: en-US
 title: "Bits and Qubits"
 description: "A blog about programming and software engineering, with some math and science for good measure."
-baseurl: # the subpath of your site, e.g. "/blog"
+baseurl: /bitsandqubits # the subpath of your site, e.g. "/blog"
 url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 logo: "/assets/images/b.q-Logo-full-512.png"
 date_format: "%B %-d, %Y"
