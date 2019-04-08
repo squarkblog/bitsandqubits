@@ -7,14 +7,31 @@ sitemap: false
 
 @import "so-simple";
 
-.right {
-    text-align: right;
+.page-title {
+    margin-bottom: 0.5em;
+    font-family: "Lora", serif;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: -2px; 
+    font-size: 35px;
 }
 
-.author {
-    font-family: "Lora", serif;
-    font-weight: 400;
-    font-size: 16px;
+@media screen and (min-width: 320px) {
+    .page-title {
+        font-size: 35px; 
+    } 
+}
+
+@media screen and (min-width: 1280px) {
+    .page-title {
+        font-size: 40px; 
+    } 
+}
+
+#footer {
+    .support {
+        margin-bottom: 20px;
+    }
 }
 
 .btn--pinterest {
@@ -25,4 +42,14 @@ sitemap: false
         background-color: #aa0013;
         color: #fff;
     }
+}        
+
+.right {
+    text-align: right;
+}
+
+.author {
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-size: 16px;
 }

@@ -1,3 +1,21 @@
 <!-- start custom footer snippets -->
-
+<div class="support">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="business" value="7XXQDDSQRH562" />
+  
+      <!-- Specify a Donate button. -->
+      <input type="hidden" name="cmd" value="_donations" />
+  
+      <!-- Specify details about the contribution -->
+      <input type="hidden" name="item_name" value="Bits and Qubits Blog" />
+      <input type="hidden" name="item_number" value="Donation" />
+      <input type="hidden" name="currency_code" value="EUR" />
+  
+      <!-- Display the payment button. -->
+      <input type="image" name="submit" style="background:transparent;border:none;"
+        src="{{ site.baseurl }}/assets/images/buy-me-a-cup-of-coffee.png" 
+        alt="" />
+      <img alt="" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" />
+  </form>
+  </div>
 <!-- end custom footer snippets -->
